@@ -1,8 +1,5 @@
 
-    let paragrapf = document.getElementById("content");
-    let namebox = document.getElementById("namebox");
-    let colorbox = document.getElementById("colorbox");
-    let hashbox = document.getElementById("hashbox");
+let colorbox = document.getElementById("colorbox");
 
    document.onmousemove = function(e){
         let hex_a = e.clientX / 3;
