@@ -1,17 +1,4 @@
-/*
-function mouseMoving(){
-    let abc = document.getElementById("content")
-    abc.clientX.innerHTML;
-   }
-   
 
-   window.onload = function(){
-       let bcd = document.getElementById("hashbox");
-       if(bcd.onmouseover){
-         mouseMoving();
-       }
-  }
-   */
     let paragrapf = document.getElementById("content");
     let namebox = document.getElementById("namebox");
     let colorbox = document.getElementById("colorbox");
