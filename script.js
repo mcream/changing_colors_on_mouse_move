@@ -1,24 +1,27 @@
 /*
 function mouseMoving(){
-    var abc = document.getElementById("content")
+    let abc = document.getElementById("content")
     abc.clientX.innerHTML;
    }
    
 
    window.onload = function(){
-       var bcd = document.getElementById("hashbox");
+       let bcd = document.getElementById("hashbox");
        if(bcd.onmouseover){
          mouseMoving();
        }
   }
    */
-    const paragrapf = document.getElementById("content");
-    const namebox = document.getElementById("namebox");
-    const colorbox = document.getElementById("colorbox");
-    const hashbox = document.getElementById("hashbox");
+    let paragrapf = document.getElementById("content");
+    let namebox = document.getElementById("namebox");
+    let colorbox = document.getElementById("colorbox");
+    let hashbox = document.getElementById("hashbox");
 
    document.onmousemove = function(e){
-    colorbox.style.background = "green";
-        paragrapf.innerHTML = e.clientX;
-    
+        let hex_a = e.clientX / 6;
+        let hex_b = e.clientX;
+        let hex_c = e.clientY;
+        let ranNumb = Math.floor((Math.random() * 255) + 1);
+
+        colorbox.style.background = 'rgb(' + hex_a + ', ' + '0' + ', ' + '0' + ')';
    }
