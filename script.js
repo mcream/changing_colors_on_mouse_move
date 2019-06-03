@@ -18,10 +18,9 @@ function mouseMoving(){
     let hashbox = document.getElementById("hashbox");
 
    document.onmousemove = function(e){
-        let hex_a = e.clientX / 6;
-        let hex_b = e.clientX;
-        let hex_c = e.clientY;
-        let ranNumb = Math.floor((Math.random() * 255) + 1);
+        let hex_a = e.clientX / 3;
+        let hex_b = e.clientY / 3;
+        let hex_c = hex_a / hex_b;
 
-        colorbox.style.background = 'rgb(' + hex_a + ', ' + '0' + ', ' + '0' + ')';
+         colorbox.style.backgroundImage = 'linear-gradient(217deg, rgb('+ hex_c +','+ hex_b +','+ hex_a +'), rgb(' + hex_a + ',' + hex_b + ','+ hex_c +') 90%)';
    }
